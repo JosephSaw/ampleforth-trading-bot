@@ -1,0 +1,436 @@
+{
+  "contractName": "ConstructorRebaseCallerContract",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "name": "orchestrator",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"name\":\"orchestrator\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/ConstructorRebaseCallerContract.sol\":\"ConstructorRebaseCallerContract\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/Orchestrator.sol\":{\"keccak256\":\"0x6c165d67a6e1f485ec16565b519634a9d587eb04a6119bbaff51ed7a36b89b75\",\"urls\":[\"bzzr://295966e8222c75f43db9447eb426a35eb878785ece9c5fadd33617b15663e646\"]},\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/UFragments.sol\":{\"keccak256\":\"0xd65f5a383bf09b44d04fe6c3b044bc12466e460c4dd59c04f2b27c63b7f8bca4\",\"urls\":[\"bzzr://97b2e00518ad95e8cb922791a8e07bcaa81dde2ff20efe0e7c78023919abc724\"]},\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/UFragmentsPolicy.sol\":{\"keccak256\":\"0x2460c20b2e4011bddf1cfd80b99ffa9e7e07b4c3a23c7a4fd59a488d95a9fa43\",\"urls\":[\"bzzr://173e30f1e226537b5c37cd9587a3c268565b907cce721a7b346d3339a7d804a6\"]},\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/lib/SafeMathInt.sol\":{\"keccak256\":\"0xb4f252a7c7f169a04e66436a9e0299e854c17b076278768c81a814bd4f2bae78\",\"urls\":[\"bzzr://b4f1df93aa9e48f81e01100a9b8ad1425133c9b60b06c5eef1548409ba102725\"]},\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/lib/UInt256Lib.sol\":{\"keccak256\":\"0xdec795f5afaa833d864fcf01960144aba66b50cc64416dcbdd528a9ca9cf80a5\",\"urls\":[\"bzzr://684483977de8b215318541ea3948ac7e1a5c36e34e13e7137351ef14259831c5\"]},\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/ConstructorRebaseCallerContract.sol\":{\"keccak256\":\"0xd3f1f9a56bb563aa00b40817d15987800adab49ea89877ad70ed13fc379b739b\",\"urls\":[\"bzzr://4111145eaf61a293554196576aeee2afececcec42947ebcf50e7bcb7aed218ae\"]},\"openzeppelin-eth/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xca27427124232a675642ba45303b78d5a36e1207ee222030ef249e11eba5a224\",\"urls\":[\"bzzr://013c67962737acca577ecd24e6b6c80f85b05fd03c1c75ab68f65a084f4b4cfd\"]},\"openzeppelin-eth/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0x1c591a78d1b95b5f22f6769116eeedb627334475ae005a6c8228598981f74989\",\"urls\":[\"bzzr://4b76436911177bd8b9ba061d626731bb90f61c6be482fe94d2b96e8be169cd83\"]},\"openzeppelin-eth/contracts/token/ERC20/ERC20Detailed.sol\":{\"keccak256\":\"0x8034b14917a770a79a761769bfff95464ad431fad758be410f3a57ffd80a61c6\",\"urls\":[\"bzzr://093ccda4f849bc03c8d68aa5b3f94b43cfa73d8392452b1a45d6d4e1f966f1f0\"]},\"openzeppelin-eth/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x0786a09def412e5a92e1da8545114b39f9bbd8bd1ba6f62a5bf8b81f54ab25bf\",\"urls\":[\"bzzr://b35dbbf6dd505fcb601ca968d4628714a3af84024224228433eadf700e94f250\"]},\"zos-lib/contracts/Initializable.sol\":{\"keccak256\":\"0xf79d9851c085aa8412e87d7a26d3485488fe12538ecb4e317ce41fc1f2c3a16a\",\"urls\":[\"bzzr://e45c5a995f57637b2300a376647ee345cc9cb30ee1984735091fcd4b10ff3500\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060405160208060ee833981018060405281019080805190602001909291905050508073ffffffffffffffffffffffffffffffffffffffff1663af14052c6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401600060405180830381600087803b158015609457600080fd5b505af115801560a7573d6000803e3d6000fd5b505050505060358060b96000396000f3006080604052600080fd00a165627a7a723058208a9504421174454375e727e21f600a74d6ebdfe0af5ef49391d0b4d0366b3ea30029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a723058208a9504421174454375e727e21f600a74d6ebdfe0af5ef49391d0b4d0366b3ea30029",
+  "sourceMap": "62:264:5:-;;;110:213;8:9:-1;5:2;;;30:1;27;20:12;5:2;110:213:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;244:12;231:33;;;:35;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;231:35:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;231:35:5;;;;110:213;62:264;;;;;;",
+  "deployedSourceMap": "62:264:5:-;;;;;",
+  "source": "pragma solidity 0.4.24;\r\n\r\nimport \"../Orchestrator.sol\";\r\n\r\n\r\ncontract ConstructorRebaseCallerContract {\r\n    constructor(address orchestrator) public {\r\n        // Take out a flash loan.\r\n        // Do something funky...\r\n        Orchestrator(orchestrator).rebase();  // should fail\r\n        // pay back flash loan.\r\n    }\r\n}\r\n",
+  "sourcePath": "D:/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/ConstructorRebaseCallerContract.sol",
+  "ast": {
+    "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/ConstructorRebaseCallerContract.sol",
+    "exportedSymbols": {
+      "ConstructorRebaseCallerContract": [
+        1573
+      ]
+    },
+    "id": 1574,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1559,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/Orchestrator.sol",
+        "file": "../Orchestrator.sol",
+        "id": 1560,
+        "nodeType": "ImportDirective",
+        "scope": 1574,
+        "sourceUnit": 221,
+        "src": "27:29:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1573,
+        "linearizedBaseContracts": [
+          1573
+        ],
+        "name": "ConstructorRebaseCallerContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1571,
+              "nodeType": "Block",
+              "src": "151:172:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 1566,
+                            "name": "orchestrator",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1562,
+                            "src": "244:12:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 1565,
+                          "name": "Orchestrator",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 220,
+                          "src": "231:12:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_Orchestrator_$220_$",
+                            "typeString": "type(contract Orchestrator)"
+                          }
+                        },
+                        "id": 1567,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "231:26:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Orchestrator_$220",
+                          "typeString": "contract Orchestrator"
+                        }
+                      },
+                      "id": 1568,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "rebase",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 109,
+                      "src": "231:33:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 1569,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "231:35:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1570,
+                  "nodeType": "ExpressionStatement",
+                  "src": "231:35:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1572,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1563,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1562,
+                  "name": "orchestrator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1572,
+                  "src": "122:20:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1561,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "122:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "121:22:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1564,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "151:0:5"
+            },
+            "scope": 1573,
+            "src": "110:213:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1574,
+        "src": "62:264:5"
+      }
+    ],
+    "src": "0:328:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/ConstructorRebaseCallerContract.sol",
+    "exportedSymbols": {
+      "ConstructorRebaseCallerContract": [
+        1573
+      ]
+    },
+    "id": 1574,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1559,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/Orchestrator.sol",
+        "file": "../Orchestrator.sol",
+        "id": 1560,
+        "nodeType": "ImportDirective",
+        "scope": 1574,
+        "sourceUnit": 221,
+        "src": "27:29:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1573,
+        "linearizedBaseContracts": [
+          1573
+        ],
+        "name": "ConstructorRebaseCallerContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1571,
+              "nodeType": "Block",
+              "src": "151:172:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 1566,
+                            "name": "orchestrator",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 1562,
+                            "src": "244:12:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 1565,
+                          "name": "Orchestrator",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 220,
+                          "src": "231:12:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_Orchestrator_$220_$",
+                            "typeString": "type(contract Orchestrator)"
+                          }
+                        },
+                        "id": 1567,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "231:26:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Orchestrator_$220",
+                          "typeString": "contract Orchestrator"
+                        }
+                      },
+                      "id": 1568,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "rebase",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 109,
+                      "src": "231:33:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 1569,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "231:35:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1570,
+                  "nodeType": "ExpressionStatement",
+                  "src": "231:35:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1572,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1563,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1562,
+                  "name": "orchestrator",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1572,
+                  "src": "122:20:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1561,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "122:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "121:22:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1564,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "151:0:5"
+            },
+            "scope": 1573,
+            "src": "110:213:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1574,
+        "src": "62:264:5"
+      }
+    ],
+    "src": "0:328:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-11-13T08:49:15.072Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

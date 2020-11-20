@@ -1,0 +1,801 @@
+{
+  "contractName": "UInt256LibMock",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "instanceName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "functionName",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "caller",
+          "type": "address"
+        }
+      ],
+      "name": "FunctionCalled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "uintVals",
+          "type": "uint256[]"
+        },
+        {
+          "indexed": false,
+          "name": "intVals",
+          "type": "int256[]"
+        }
+      ],
+      "name": "FunctionArguments",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "val",
+          "type": "int256"
+        }
+      ],
+      "name": "ReturnValueInt256",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "val",
+          "type": "uint256"
+        }
+      ],
+      "name": "ReturnValueUInt256",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "uint256"
+        }
+      ],
+      "name": "toInt256Safe",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"a\",\"type\":\"uint256\"}],\"name\":\"toInt256Safe\",\"outputs\":[{\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"instanceName\",\"type\":\"string\"},{\"indexed\":false,\"name\":\"functionName\",\"type\":\"string\"},{\"indexed\":false,\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"FunctionCalled\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"uintVals\",\"type\":\"uint256[]\"},{\"indexed\":false,\"name\":\"intVals\",\"type\":\"int256[]\"}],\"name\":\"FunctionArguments\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"val\",\"type\":\"int256\"}],\"name\":\"ReturnValueInt256\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"val\",\"type\":\"uint256\"}],\"name\":\"ReturnValueUInt256\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/UInt256LibMock.sol\":\"UInt256LibMock\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/lib/UInt256Lib.sol\":{\"keccak256\":\"0xdec795f5afaa833d864fcf01960144aba66b50cc64416dcbdd528a9ca9cf80a5\",\"urls\":[\"bzzr://684483977de8b215318541ea3948ac7e1a5c36e34e13e7137351ef14259831c5\"]},\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/Mock.sol\":{\"keccak256\":\"0x4089ae9517336df1e86e1289dde48b9e9c0989de08c9a1a393d1866602763ac8\",\"urls\":[\"bzzr://ba11c2eaf1ae5ef656582da9fdbc0db62971b97159ca33c6a47e35a9cbb1e254\"]},\"/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/UInt256LibMock.sol\":{\"keccak256\":\"0x76f7415b7ff1c20c1f74a9f1a8bcb5a0d606d42f244fa240335f7cb5afbfe94a\",\"urls\":[\"bzzr://8f23ead0d5905b768b1f5aca973b488145f4a42ed47b97afb114973c0cf408c8\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061011b806100206000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063e823b9bf146044575b600080fd5b348015604f57600080fd5b50606c600480360381019080803590602001909291905050506082565b6040518082815260200191505060405180910390f35b600080608c8360ce565b90507f367c8bdeb63495ddb5dc24118d234a147995c3f818097913ac006528fae549f0816040518082815260200191505060405180910390a180915050919050565b600060ff60019060020a0219821115151560e757600080fd5b8190509190505600a165627a7a72305820e2672aa1d43d088a17b81c526bfede61dd33ef6b8d9b2bf5e19fc403fb435f910029",
+  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063e823b9bf146044575b600080fd5b348015604f57600080fd5b50606c600480360381019080803590602001909291905050506082565b6040518082815260200191505060405180910390f35b600080608c8360ce565b90507f367c8bdeb63495ddb5dc24118d234a147995c3f818097913ac006528fae549f0816040518082815260200191505060405180910390a180915050919050565b600060ff60019060020a0219821115151560e757600080fd5b8190509190505600a165627a7a72305820e2672aa1d43d088a17b81c526bfede61dd33ef6b8d9b2bf5e19fc403fb435f910029",
+  "sourceMap": "86:250:13:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;86:250:13;;;;;;;",
+  "deployedSourceMap": "86:250:13:-;;;;;;;;;;;;;;;;;;;;;;;;125:208;;8:9:-1;5:2;;;30:1;27;20:12;5:2;125:208:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;194:6;218:13;234:26;258:1;234:23;:26::i;:::-;218:42;;276:25;294:6;276:25;;;;;;;;;;;;;;;;;;319:6;312:13;;125:208;;;;:::o;254:166:4:-;337:6;170:3;164:1;156:17;;;;154:20;369:1;:15;;361:24;;;;;;;;410:1;396:16;;254:166;;;:::o",
+  "source": "pragma solidity 0.4.24;\r\n\r\nimport \"./Mock.sol\";\r\nimport \"../lib/UInt256Lib.sol\";\r\n\r\n\r\ncontract UInt256LibMock is Mock {\r\n    function toInt256Safe(uint256 a)\r\n        external\r\n        returns (int256)\r\n    {\r\n        int256 result = UInt256Lib.toInt256Safe(a);\r\n        emit ReturnValueInt256(result);\r\n        return result;\r\n    }\r\n}\r\n",
+  "sourcePath": "D:/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/UInt256LibMock.sol",
+  "ast": {
+    "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/UInt256LibMock.sol",
+    "exportedSymbols": {
+      "UInt256LibMock": [
+        2149
+      ]
+    },
+    "id": 2150,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2123,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:13"
+      },
+      {
+        "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/Mock.sol",
+        "file": "./Mock.sol",
+        "id": 2124,
+        "nodeType": "ImportDirective",
+        "scope": 2150,
+        "sourceUnit": 1601,
+        "src": "27:20:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/lib/UInt256Lib.sol",
+        "file": "../lib/UInt256Lib.sol",
+        "id": 2125,
+        "nodeType": "ImportDirective",
+        "scope": 2150,
+        "sourceUnit": 1558,
+        "src": "49:31:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2126,
+              "name": "Mock",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1600,
+              "src": "113:4:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mock_$1600",
+                "typeString": "contract Mock"
+              }
+            },
+            "id": 2127,
+            "nodeType": "InheritanceSpecifier",
+            "src": "113:4:13"
+          }
+        ],
+        "contractDependencies": [
+          1600
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2149,
+        "linearizedBaseContracts": [
+          2149,
+          1600
+        ],
+        "name": "UInt256LibMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 2147,
+              "nodeType": "Block",
+              "src": "207:126:13",
+              "statements": [
+                {
+                  "assignments": [
+                    2135
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 2135,
+                      "name": "result",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 2148,
+                      "src": "218:13:13",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      },
+                      "typeName": {
+                        "id": 2134,
+                        "name": "int256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "218:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 2140,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2138,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2129,
+                        "src": "258:1:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2136,
+                        "name": "UInt256Lib",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1557,
+                        "src": "234:10:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_UInt256Lib_$1557_$",
+                          "typeString": "type(library UInt256Lib)"
+                        }
+                      },
+                      "id": 2137,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "toInt256Safe",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1556,
+                      "src": "234:23:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_int256_$",
+                        "typeString": "function (uint256) pure returns (int256)"
+                      }
+                    },
+                    "id": 2139,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "234:26:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "218:42:13"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2142,
+                        "name": "result",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2135,
+                        "src": "294:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      ],
+                      "id": 2141,
+                      "name": "ReturnValueInt256",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1595,
+                      "src": "276:17:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_int256_$returns$__$",
+                        "typeString": "function (int256)"
+                      }
+                    },
+                    "id": 2143,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "276:25:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2144,
+                  "nodeType": "EmitStatement",
+                  "src": "271:30:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2145,
+                    "name": "result",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2135,
+                    "src": "319:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 2133,
+                  "id": 2146,
+                  "nodeType": "Return",
+                  "src": "312:13:13"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2148,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "toInt256Safe",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2130,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2129,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2148,
+                  "src": "147:9:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2128,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "146:11:13"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 2133,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2132,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2148,
+                  "src": "194:6:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 2131,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "194:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "193:8:13"
+            },
+            "scope": 2149,
+            "src": "125:208:13",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2150,
+        "src": "86:250:13"
+      }
+    ],
+    "src": "0:338:13"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/UInt256LibMock.sol",
+    "exportedSymbols": {
+      "UInt256LibMock": [
+        2149
+      ]
+    },
+    "id": 2150,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2123,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:13"
+      },
+      {
+        "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/mocks/Mock.sol",
+        "file": "./Mock.sol",
+        "id": 2124,
+        "nodeType": "ImportDirective",
+        "scope": 2150,
+        "sourceUnit": 1601,
+        "src": "27:20:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/Desktop/Work/Crypto/dev/Ampleforth Trader/Ampleforth/contracts/lib/UInt256Lib.sol",
+        "file": "../lib/UInt256Lib.sol",
+        "id": 2125,
+        "nodeType": "ImportDirective",
+        "scope": 2150,
+        "sourceUnit": 1558,
+        "src": "49:31:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 2126,
+              "name": "Mock",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1600,
+              "src": "113:4:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Mock_$1600",
+                "typeString": "contract Mock"
+              }
+            },
+            "id": 2127,
+            "nodeType": "InheritanceSpecifier",
+            "src": "113:4:13"
+          }
+        ],
+        "contractDependencies": [
+          1600
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2149,
+        "linearizedBaseContracts": [
+          2149,
+          1600
+        ],
+        "name": "UInt256LibMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 2147,
+              "nodeType": "Block",
+              "src": "207:126:13",
+              "statements": [
+                {
+                  "assignments": [
+                    2135
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 2135,
+                      "name": "result",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 2148,
+                      "src": "218:13:13",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      },
+                      "typeName": {
+                        "id": 2134,
+                        "name": "int256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "218:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 2140,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2138,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2129,
+                        "src": "258:1:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 2136,
+                        "name": "UInt256Lib",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1557,
+                        "src": "234:10:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_UInt256Lib_$1557_$",
+                          "typeString": "type(library UInt256Lib)"
+                        }
+                      },
+                      "id": 2137,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "toInt256Safe",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1556,
+                      "src": "234:23:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_int256_$",
+                        "typeString": "function (uint256) pure returns (int256)"
+                      }
+                    },
+                    "id": 2139,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "234:26:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "218:42:13"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 2142,
+                        "name": "result",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2135,
+                        "src": "294:6:13",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      ],
+                      "id": 2141,
+                      "name": "ReturnValueInt256",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1595,
+                      "src": "276:17:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_int256_$returns$__$",
+                        "typeString": "function (int256)"
+                      }
+                    },
+                    "id": 2143,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "276:25:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 2144,
+                  "nodeType": "EmitStatement",
+                  "src": "271:30:13"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 2145,
+                    "name": "result",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2135,
+                    "src": "319:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 2133,
+                  "id": 2146,
+                  "nodeType": "Return",
+                  "src": "312:13:13"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 2148,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "toInt256Safe",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2130,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2129,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2148,
+                  "src": "147:9:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2128,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "146:11:13"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 2133,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2132,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2148,
+                  "src": "194:6:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 2131,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "194:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "193:8:13"
+            },
+            "scope": 2149,
+            "src": "125:208:13",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2150,
+        "src": "86:250:13"
+      }
+    ],
+    "src": "0:338:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-11-13T08:49:15.090Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
