@@ -337,12 +337,19 @@ async function letsTrade() {
   //   return
   // }
 
+  // If supply expansion is less than 5% then do not execute trade
+   if (dailyAdjustmentPercentage <= 5) {
+    console.log('supply expansion is less than 5%, exitting')
+    running = false
+    return
+  }
+
   // Rebase is every hour on Rinkeby, so trade execution won't run unless it's 5 minutes before the next rebase
-  // if (!isRebaseHappeningSoon(lastRebaseTimestamp) && !rebaseTimestampDuringTradeExecution) {
-  //   console.log('rebase not happening, exitting')
-  //   running = false
-  //   return
-  // }
+  if (!isRebaseHappeningSoon(lastRebaseTimestamp) && !rebaseTimestampDuringTradeExecution) {
+    console.log('rebase not happening soon, exitting')
+    running = false
+    return
+  }
 
   // Exit code if we've swapped Dai to Ample but the rebase has not completed yet
   if (rebaseTimestampDuringTradeExecution === lastRebaseTimestamp) {
